@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mp3player" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="444.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mp3player">
+   <children>
+      <Label fx:id="songlabel" alignment="CENTER" prefHeight="90.0" prefWidth="444.0" style="-fx-border-color: GREY;" text="MP3 PLAYER" textFill="#9cb1b0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="songprogressbar" layoutY="90.0" prefHeight="14.0" prefWidth="444.0" progress="0.0" style="-fx-background-color: #00f00;" />
+      <Button fx:id="playbutton" layoutY="105.0" mnemonicParsing="false" onAction="#playmedia" prefHeight="26.0" prefWidth="43.0" style="-fx-background-color: gray; -fx-border-radius: 50;" text="PLAY" />
+      <Button fx:id="pausebutton" layoutX="43.0" layoutY="105.0" mnemonicParsing="false" onAction="#pausemedia" style="-fx-background-color: gray; -fx-border-radius: 100;" text="PAUSE" />
+      <Button fx:id="resetbutton" layoutX="94.0" layoutY="105.0" mnemonicParsing="false" onAction="#resetmedia" style="-fx-background-color: gray; -fx-border-radius: 100;" text="RESET" />
+      <Button fx:id="previousbutton" layoutX="142.0" layoutY="105.0" mnemonicParsing="false" onAction="#previousmedia" style="-fx-background-color: gray; -fx-border-radius: 40;" text="PREVIOUS" />
+      <Button fx:id="nextbutton" layoutX="212.0" layoutY="105.0" mnemonicParsing="false" onAction="#nextmedia" style="-fx-background-color: gray; -fx-border-radius: 100;" text="NEXT" />
+      <ComboBox fx:id="speedbox" layoutX="257.0" layoutY="105.0" onAction="#changespeed" prefHeight="26.0" prefWidth="78.0" promptText="SPEED" style="-fx-background-color: gray; -fx-border-radius: 40;" />
+      <Slider fx:id="volume" layoutX="335.0" layoutY="111.0" max="100.0" prefHeight="14.0" prefWidth="106.0" style="-fx-background-color: gray;" value="50.0" />
+   </children>
+</AnchorPane>
