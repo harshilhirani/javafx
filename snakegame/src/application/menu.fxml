@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="272.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu">
+   <children>
+      <Button fx:id="newgame" layoutX="84.0" layoutY="122.0" mnemonicParsing="false" onAction="#play" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: gray;" text="New game" textFill="#07ff00">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="exit" layoutX="111.0" layoutY="207.0" mnemonicParsing="false" onAction="#exitgame" style="-fx-background-color: gray;" text="Exit" textFill="#7bff00">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="72.0" prefWidth="272.0" text="Snake Game" textFill="#ff1a1a">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
